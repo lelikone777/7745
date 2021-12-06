@@ -158,6 +158,8 @@
             }
         }
 
+
+
         @media (min-height: 750px) {
             main .container {
                 height: 85%;
@@ -165,19 +167,103 @@
             }
         }
 
-        @media (min-height: 750px)
+        @media (min-height: 850px)
         /*and (max-width: 320px)*/
         {
             .main-image img {
-                height: auto;
-                width: 100%;
+                /*height: auto;*/
+                /*width: 100%;*/
+            }
+        }
+        @media (max-height: 320px)
+        and (orientation: landscape) {
+            .button h2 {
+                font-size: 30px;
+                line-height: 1;
+            }
+            .button p {
+                font-size: 20px;
+                line-height: 1;
             }
         }
 
-        @media (max-height: 749px)
-       and (max-width: 570px) {
-
+        @media (max-height: 430px)
+        and (orientation: landscape) {
+            main .container {
+                justify-content: center;
+            }
+            .main-image {
+                display: none;
+            }
+            .button {
+                flex: 0.8;
+            }
         }
+
+
+
+        @media (max-height: 520px)
+            and (orientation: landscape) {
+            .button p {
+                margin-bottom: 18px;
+            }
+        }
+
+        @media (max-height: 615px)
+       and (orientation: landscape) {
+            .main-image {
+                height: 30vh;
+                margin-top: 10px;
+            }
+            .button {
+                margin-top: 0;
+            }
+        }
+
+        @media (max-height: 630px)
+        and (orientation: portrait) {
+            .main-image {
+                margin-top: 18px;
+            }
+            .button p {
+                margin-bottom: 18px;
+            }
+        }
+
+        @media (max-height: 641px)
+        and (orientation: portrait) {
+            .button h2 {
+                font-size: 34px;
+            }
+        }
+
+        @media (max-height: 667px)
+        and (orientation: portrait) {
+            .button h2 {
+                font-size: 30px;
+                line-height: 1;
+            }
+            .button p {
+                font-size: 24px;
+                line-height: 1;
+            }
+        }
+
+
+
+        @media (max-height: 460px)
+            and (max-width: 410px)
+        and (orientation: portrait) {
+            .button h2 {
+                font-size: 27px;
+                line-height: 1;
+            }
+            .button p {
+                font-size: 18px;
+                line-height: 1;
+            }
+        }
+
 
     </style>
 </head>
